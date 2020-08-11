@@ -11,19 +11,19 @@ export class ProjectsComponent implements OnInit ,OnDestroy  {
   
   projects=[
     {
-      im:"../../../assets/projects/maktabty.png",
+      im:"assets/projects/maktabty.png",
       name:"maktabty",
       url:"https://andrew2020ayman.github.io/Maktabty/",
       des:"Good books don't give up all their secrets at once"
     },
     {
-      im:"../../../assets/projects/montana.png",
+      im:"assets/projects/montana.png",
       name:"Montana",
       url:"https://andrew2020ayman.github.io/montanaHostTest/",
       des:"Unlock to enjoy the view of Martine"
     }
     ,{
-      im:"../../../assets/projects/musicPlayer.PNG",
+      im:"assets/projects/musicPlayer.PNG",
       name:"My Music",
       url:"https://andrew2020ayman.github.io/Music-Player/Home",
       des:"“Music can change the world because it can change people.” ― Bono"

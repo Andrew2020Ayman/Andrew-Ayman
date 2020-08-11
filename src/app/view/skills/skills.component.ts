@@ -12,43 +12,43 @@ export class SkillsComponent implements OnInit  {
    images = [
     
     {
-      im : "../../../assets/Skills/html.jpg",
+      im : "assets/Skills/html.jpg",
       name:"HTML"
     },
     {
-      im : "../../../assets/Skills/css.jpg",
+      im : "assets/Skills/css.jpg",
       name:"CSS"
      },
     {
-      im : "../../../assets/Skills/nodejs1.jpg",
+      im : "assets/Skills/nodejs1.jpg",
       name:"NODE JS"
     },
     {
-      im : "../../../assets/Skills/ang1.jpg",
+      im : "assets/Skills/ang1.jpg",
       name:"ANGULAR"
     },
     {
-     im : "../../../assets/Skills/js.jpeg",
+     im : "assets/Skills/js.jpeg",
      name:"JAVA SCRIPT"
     },
     {
-      im : "../../../assets/Skills/bts.jpg",
+      im : "assets/Skills/bts.jpg",
       name:"BOOTSTRAP"  
     },
     {
-      im : "../../../assets/Skills/jqu2.png",
+      im : "assets/Skills/jqu2.png",
       name:"JQUERY"
     },
     {
-      im : "../../../assets/Skills/mdb.jpg",
+      im : "assets/Skills/mdb.jpg",
       name:"MONGO DB"
     },
     {
-      im : "../../../assets/Skills/ts.jpg",
+      im : "assets/Skills/ts.jpg",
       name:"TYPE SCRIPT"
     },
     {
-      im : "../../../assets/Skills/git.png",
+      im : "assets/Skills/git.png",
       name:"GIT"
     }
   ] 
