@@ -1,0 +1,177 @@
+.sidenav {
+  height: 100%;
+  width: 60px;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  z-index: 10;
+  background: transparent;
+}
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  .imgIcon{
+    width: 75%;
+    margin-left: 7%;
+    padding-top: 10%;
+
+  }
+
+  .IconDiv{
+    padding-bottom: 1px;
+    z-index: 20;
+    position: absolute;
+    right: 4%;
+    top: 9%;
+    width: 50%;
+  }
+
+  .NamePar{
+    color: #ffd88a;
+    text-align: center;
+  }
+
+  .LinksIcons{
+    position: absolute;
+    bottom: 1px;
+  }
+  
+  
+  .RouteDiv a i{
+    transition: all.3s  ease-out;
+    opacity: 1;
+  }
+  .RouteDiv a:hover i{
+    opacity: 0;
+  }
+ 
+  .RouteDiv a::after{
+     transition: all.3s  ease-out;
+     opacity: 0;
+  }
+  .RouteDiv a:hover::after{
+    font-family: 'Cinzel Decorative', cursive;
+    position: absolute;
+    color: #08fdd8;
+    font-size: 10px;
+    padding-top: 19%;
+    opacity: 1;
+  }
+  .home-a:hover::after{
+    content: 'HOME';
+    left: 16%;
+  }
+  .code-a:hover::after{
+    content: 'SKILLS';
+    left: 16%;
+  }
+  .eye-a:hover::after{
+    content: 'PROJECTS';
+    left: 4%;
+  }
+  .user-a:hover::after{
+    content: 'ABOUT';
+    left: 13%;
+  }
+
+  .LinksIcons a:hover{
+    color: #08fdd8;
+  }
+
+  .MenuPar{
+    position: absolute;
+    top: 40px;
+    left: 2%;
+    color: white;
+    writing-mode: vertical-lr !important;
+    text-transform: uppercase;
+  }
+  .MenuPar::after{
+    content: '';
+  background-color: white;
+  width: 2px;
+  height: 51px;
+  color: white;
+  position: absolute;
+  right: 9px;
+  top: 72px;
+  }
+  h2{
+    font-family: 'Rock Salt', cursive !important;
+    position: absolute !important;
+      color: white !important;
+      top: 8% !important;
+      right: 8% !important;
+      font-size: 20px !important;
+      cursor: pointer;
+    }
+  
+    
+    h2:hover .s1::after{
+    content: 'ndrew ';
+    
+    }
+    h2:hover .s2::after{
+      content: 'yman.';
+    }
+
+    .RouteDiv{
+      margin-top: 48%;
+      position: relative;
+    }
+    .RouteDiv::before{
+      content: '';
+      width: 1px;
+      height: 24%;
+      background-color: white;
+      position: absolute;
+      left: 45%;
+      top: -20%;
+    }
+
+    .RouteDiv::after{
+      content: '';
+      width: 1px;
+      height: 66%;
+      background-color: white;
+      position: absolute;
+      left: 39%;
+    }
+
+    /*  ----- Responsive------ */
+
+
+  @media only screen and (min-width: 1600px) {
+      .RouteDiv {
+        margin-top: 187%;
+    }
+    .sidenav a {
+      font-size: 31px;
+    }
+
+    .RouteDiv::before {
+      height: 44%;
+      top: -45%;
+  }
+  .RouteDiv::after {
+    height: 76%;
+  }
+  h2 {
+    font-size: 29px !important;
+   }
+   .RouteDiv a:hover::after {
+    font-family: 'Cinzel Decorative', cursive;
+    position: absolute;
+    color: #08fdd8;
+    font-size: 12px;
+   }
+}
