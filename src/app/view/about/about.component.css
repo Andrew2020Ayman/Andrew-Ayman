@@ -216,7 +216,7 @@ h2:before {
   }
   #pyramid > div:first-child::after  {
      position: absolute;
-     content: url("/assets/html5.svg");
+     content: url("../../../assets/html5.svg");
 }
 
   #pyramid > div:nth-child(2) {
@@ -228,7 +228,7 @@ h2:before {
   #pyramid > div:nth-child(2)::after {
       
     position: absolute;
-    content: url("/assets/JavaScript-01.svg");
+    content: url("../../../assets/JavaScript-01.svg");
   }
   #pyramid > div:nth-child(3) {
     -webkit-transform: rotateX(60deg) rotateY(19.5deg) ;
@@ -238,7 +238,7 @@ h2:before {
   #pyramid > div:nth-child(3)::after {
     
     position: absolute;
-     content: url("/assets/angular.svg");
+     content: url("../../../assets/angular.svg");
   }
   #pyramid > div:nth-child(4) {
     transform: rotateX(-60deg) rotateY(19.5deg) translateX(-116px) translateY(-200px) translateZ(326px);
@@ -247,7 +247,7 @@ h2:before {
   }
   #pyramid > div:nth-child(4)::after {
     position: absolute;
-    content: url("/assets/CSS.svg");
+    content: url("../../../assets/CSS.svg");
    
   }
 
