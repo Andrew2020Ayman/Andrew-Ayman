@@ -351,3 +351,90 @@ a{
 
 
   }
+
+
+  @media only screen and (max-width: 1024px) {
+
+   ::ng-deep .owl-carousel .owl-item img {
+      height: auto !important;
+  }
+
+    .eyebrow{
+      margin-left: 21%;
+    }
+    .eyebrow::before{
+      left: 14%;
+    }
+    .ProjectName {
+      font-size: 38px;
+      margin-left: 8%;
+    }
+    ::ng-deep .prevBtn , ::ng-deep .nextBtn {
+      display: none;
+    }
+    .projectDes {
+      padding-top: 0;
+      padding-left: 8%;
+      font-size: 18px;
+    }
+    .btnDiv {
+      text-align: center;
+      display: contents;
+    }
+    .visitBtn{
+     margin-top: 0; 
+     margin-left: 0;   
+    font-size: 13px;
+      }
+.visitBtn:hover::before , .visitBtn:hover::after{
+  display: none;
+}  
+.macbook__display{
+  height: 190px;
+  width: 300px;
+}
+
+.macbook__body{
+  width: 83%;
+    margin-left: 8%;
+}
+#LabPart{
+  margin-left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+  }
+
+  @media only screen and (max-width: 550px) {
+    .macbook__display{
+      height: 190px;
+      width: 300px;
+    }
+    
+    .macbook__body{
+      width: 95%;
+      margin-left: 2%;
+    }
+    #LabPart{
+      margin-left: 0;
+      position: absolute;
+      bottom: 14%;
+      left: 0;
+    }
+  }
+
+  @media only screen and (max-width: 360px) {
+    .macbook__display {
+      height: 154px;
+      width: 250px;
+  }
+  #LabPart {
+    margin-left: 0;
+    position: absolute;
+    bottom: 1%;
+    left: 16px;
+}
+
+  }

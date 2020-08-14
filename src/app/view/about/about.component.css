@@ -1,4 +1,6 @@
-
+#about_section{
+  overflow: hidden;
+}
 .row{
     width: 100%;
     padding-left: 5%;
@@ -106,14 +108,15 @@ h1 {
 }
  h2 {
   padding-left: 8%;
-    color: white;
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: 19px;
-    letter-spacing: 3px;
-    -webkit-animation: myanim2 1s 1.8s backwards;
-    animation: myanim2 1s 1.8s backwards;
-    font-family: 'Unica One', cursive;
+  color: white;
+  margin-top: -3%;
+  font-weight: 400;
+  padding-bottom: 6%;
+  font-size: 18px;
+  letter-spacing: 3px;
+  -webkit-animation: myanim2 1s 1.8s backwards;
+  animation: myanim2 1s 1.8s backwards;
+  font-family: 'Unica One', cursive;
 }
 
 .linked-a{
@@ -332,4 +335,48 @@ h2:before {
   #pyramid{
     zoom: 1.4;
   }
+ }
+ @media only screen and (max-width: 910px) and (min-width: 771px) {
+   h1{
+     font-size: 40px;
+   }
+ }
+ @media only screen and (max-width: 770px) {
+  
+  .HeadPart {
+    padding-top: 15%;
+    padding-left: 4%;
+}
+  #about_section {
+    margin-top: 18%;
+    margin-left: 3%;
+   }
+  #pyramid{
+      opacity: 0 !important;
+    }
+    h1{
+      font-size: 35px;
+    }
+    h2{
+      font-size: 15px;
+    }
+    .tags{
+      left: 14%;
+    }
+ }
+ @media only screen and (max-width: 322px) {
+  h1 {
+    font-size: 28px;
+}
+h2 {
+  padding-left: 11%;
+  color: white;
+  margin-top: -32px;
+  font-size: 11px;
+}
+#about_section {
+  margin-top: 18%;
+  margin-left: 8%;
+}
+
  }

@@ -10,6 +10,7 @@
   overflow-x: hidden;
   z-index: 10;
   background: transparent;
+  overflow: hidden;
 }
 .sidenav a {
     padding: 6px 8px 6px 16px;
@@ -174,4 +175,30 @@
     color: #08fdd8;
     font-size: 12px;
    }
+}
+
+@media only screen and (max-height: 650px) { 
+  .LinksIcons {
+    bottom: 7%;
+}
+.RouteDiv::after {
+  content: '';
+  width: 1px;
+  height: 26%;
+}
+
+}
+@media only screen and (max-width: 768px) { 
+  .RouteDiv::after {
+    height: 33%;
+  }
+  .LinksIcons {
+    bottom: 7%;
+}
+  }
+
+@media only screen and (max-width: 320px){
+.RouteDiv::after {
+    height: 23%;
+}
 }

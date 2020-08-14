@@ -1,4 +1,6 @@
-
+.HomeSection{
+    overflow: hidden;
+}
 .row{
     width: 100%;
     padding-left: 5%;
@@ -38,7 +40,7 @@
  .letter { 
      cursor: context-menu;
     opacity: 0;
-	 display: inline-block;
+    display: contents;
 	
 }
 .lettAnim{
@@ -317,3 +319,58 @@ canvas{
         font-size: 59px;
     }
 }
+
+@media only screen and (max-width: 1055px) {
+    h1 {   
+        font-size: 34px;
+        line-height: 53px;
+        top: 30%;
+        left: 18%;
+        letter-spacing: 11px;
+    }
+    canvas {
+        width: max-content;
+        height: max-content;
+    }
+
+    h2{
+        top: 48%;
+        left: 13%;
+        font-size: 15px;
+    }
+ 
+    h1:after {
+        margin-top: 33px;
+        margin-left: -14px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .lett_n {
+        padding-right: 29%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1 {   
+        font-size: 29px;
+        line-height: 53px;
+        top: 30%;
+        left: 23%;
+        letter-spacing: 5px;
+    }
+    canvas {
+        width: max-content;
+        height: max-content;
+    }
+
+    h2{
+        top: 54%;
+        left: 13%;
+        font-size: 12px;
+    }
+    .lett_n {
+        margin-left: 25%;
+    }
+}
+ 
