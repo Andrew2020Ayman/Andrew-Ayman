@@ -10,13 +10,13 @@ declare var $:any;
 export class HomeComponent implements OnInit  {
 
   constructor(private elementRef: ElementRef) {
-    
+
     if ($("body").hasClass("projBody")){
       $('body').removeClass("projBody");
     }
-  
+
    }
-  
+
   ngOnInit() {
 
     setTimeout(() => {
@@ -31,7 +31,7 @@ export class HomeComponent implements OnInit  {
        $("span").removeClass("lettAnim");
 
     }, 1300);
-    
+
 /* --------- */
 
 var canvas = document.querySelector('canvas'),
@@ -57,7 +57,7 @@ var ball = {
    balls = [],
    alpha_f = 0.03,
    alpha_phase = 0,
-    
+
 // Line
    link_line_width = 1,
    dis_limit = 280,
@@ -113,7 +113,7 @@ function getRandomBall(){
                 vy: getRandomSpeed('top')[1],
                 r: R,
                 alpha: 1,
-                phase: randomNumFrom(0, 10)
+                phase: randomNumFrom(0, 20)
             }
             break;
         case 'right':
@@ -124,7 +124,7 @@ function getRandomBall(){
                 vy: getRandomSpeed('right')[1],
                 r: R,
                 alpha: 1,
-                phase: randomNumFrom(0, 10)
+                phase: randomNumFrom(0, 20)
             }
             break;
         case 'bottom':
@@ -135,7 +135,7 @@ function getRandomBall(){
                 vy: getRandomSpeed('bottom')[1],
                 r: R,
                 alpha: 1,
-                phase: randomNumFrom(0, 10)
+                phase: randomNumFrom(0, 20)
             }
             break;
         case 'left':
@@ -146,7 +146,7 @@ function getRandomBall(){
                 vy: getRandomSpeed('left')[1],
                 r: R,
                 alpha: 1,
-                phase: randomNumFrom(0, 10)
+                phase: randomNumFrom(0, 20)
             }
             break;
     }
@@ -174,23 +174,23 @@ function updateBalls(){
     Array.prototype.forEach.call(balls, function(b){
         b.x += b.vx;
         b.y += b.vy;
-        
+
         if(b.x > -(50) && b.x < (can_w+50) && b.y > -(50) && b.y < (can_h+50)){
            new_balls.push(b);
         }
-        
+
         // alpha change
         b.phase += alpha_f;
         b.alpha = Math.abs(Math.cos(b.phase));
         // console.log(b.alpha);
     });
-    
+
     balls = new_balls.slice(0);
 }
 
 // loop alpha
 function loopAlphaInf(){
-    
+
 }
 
 // Draw lines
@@ -198,15 +198,15 @@ function renderLines(){
     var fraction, alpha;
     for (var i = 0; i < balls.length; i++) {
         for (var j = i + 1; j < balls.length; j++) {
-           
+
            fraction = getDisOf(balls[i], balls[j]) / dis_limit;
-            
+
            if(fraction < 1){
                alpha = (1 - fraction).toString();
 
                ctx.strokeStyle = 'rgba(150,150,150,'+alpha+')';
                ctx.lineWidth = link_line_width;
-               
+
                ctx.beginPath();
                ctx.moveTo(balls[i].x, balls[i].y);
                ctx.lineTo(balls[j].x, balls[j].y);
@@ -221,13 +221,13 @@ function renderLines(){
 function getDisOf(b1, b2){
     var  delta_x = Math.abs(b1.x - b2.x),
        delta_y = Math.abs(b1.y - b2.y);
-    
+
     return Math.sqrt(delta_x*delta_x + delta_y*delta_y);
 }
 
 // add balls if there a little balls
 function addBallIfy(){
-    if(balls.length < 20){
+    if(balls.length < 30){
         balls.push(getRandomBall());
     }
 }
@@ -235,15 +235,15 @@ function addBallIfy(){
 // Render
 function render(){
     ctx.clearRect(0, 0, can_w, can_h);
-    
+
     renderBalls();
-    
+
     renderLines();
-    
+
     updateBalls();
-    
+
     addBallIfy();
-    
+
     window.requestAnimationFrame(render);
 }
 
@@ -257,7 +257,7 @@ function initBalls(num){
             vy: getRandomSpeed('top')[1],
             r: R,
             alpha: 1,
-            phase: randomNumFrom(0, 10)
+            phase: randomNumFrom(0, 40)
         });
     }
 }
@@ -265,7 +265,7 @@ function initBalls(num){
 function initCanvas(){
     canvas.setAttribute('width', window.innerWidth.toString());
     canvas.setAttribute('height', window.innerHeight.toString());
-    
+
     can_w = parseInt(canvas.getAttribute('width'));
     can_h = parseInt(canvas.getAttribute('height'));
 }
@@ -276,7 +276,7 @@ window.addEventListener('resize', function(e){
 
 function goMovie(){
     initCanvas();
-    initBalls(30);
+    initBalls(40);
     window.requestAnimationFrame(render);
 }
 goMovie();

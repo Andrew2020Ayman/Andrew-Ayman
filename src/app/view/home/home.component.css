@@ -34,17 +34,17 @@
     font-size: 18px;
     left: 5%;
 	font-family: 'La Belle Aurore',cursive;
-	
+
 }
 
- .letter { 
+ .letter {
      cursor: context-menu;
-    opacity: 0;
+    /* opacity: 0; */
     display: contents;
-	
+
 }
 .lettAnim{
-	animation-name: push !important; 
+	animation-name: push !important;
 }
 
 .letter:hover {
@@ -72,7 +72,7 @@
     top: 40%;
     left: 20%;
     font-family: 'Krona One', sans-serif;
-    letter-spacing: 15px;
+    letter-spacing: 13px;
 }
  h1:before {
     content: '<h1>';
@@ -98,12 +98,12 @@
   h2 {
 	position: absolute;
     top: 48%;
-    left: 23%;
+    left: 15%;
     color: white;
     font-size: 49px;
-    letter-spacing: 7px;
+    letter-spacing: 8px;
     font-family: 'Syncopate', sans-serif;
-} 
+}
 
 
 .imgLett{
@@ -245,7 +245,7 @@
 
 
 @keyframes push {
-   
+
     50%{
         transform:  scaleY(0.6);
     }
@@ -270,7 +270,7 @@
 	position: fixed;
 	background-color: #fff;
   }
-  
+
   .page-back {
 	width: 120%;
 	height: 120%;
@@ -283,7 +283,7 @@
 	-webkit-filter: blur(3px);
 	filter: blur(3px);
   }
-  
+
   .page-front {
 	position: absolute;
 	left: 50%;
@@ -292,7 +292,7 @@
 	-webkit-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
   }
-  
+
   .page-front img {
 	width: 100%;
   }
@@ -321,7 +321,7 @@ canvas{
 }
 
 @media only screen and (max-width: 1055px) {
-    h1 {   
+    h1 {
         font-size: 34px;
         line-height: 53px;
         top: 30%;
@@ -338,7 +338,7 @@ canvas{
         left: 13%;
         font-size: 15px;
     }
- 
+
     h1:after {
         margin-top: 33px;
         margin-left: -14px;
@@ -352,7 +352,7 @@ canvas{
 }
 
 @media only screen and (max-width: 400px) {
-    h1 {   
+    h1 {
         font-size: 29px;
         line-height: 53px;
         top: 30%;
@@ -373,4 +373,3 @@ canvas{
         margin-left: 25%;
     }
 }
- 
