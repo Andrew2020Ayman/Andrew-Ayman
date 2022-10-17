@@ -10,6 +10,7 @@ import { AboutComponent } from './view/about/about.component';
 import { SkillsComponent } from './view/skills/skills.component';
 
 import { OwlModule } from "ngx-owl-carousel";
+import { LazyLoadImageModule, LAZYLOAD_IMAGE_HOOKS, ScrollHooks } from 'ng-lazyload-image';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,14 +18,18 @@ import { OwlModule } from "ngx-owl-carousel";
     HomeComponent,
     ProjectsComponent,
     AboutComponent,
-    SkillsComponent
+    SkillsComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    OwlModule
+    OwlModule,
+    LazyLoadImageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/* { provide: LAZYLOAD_IMAGE_HOOKS, useClass: ScrollHooks } */

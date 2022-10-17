@@ -8,19 +8,19 @@ declare var $:any;
 })
 export class SkillsComponent implements OnInit  {
 
- 
+
    images = [
-    
+
     {
       im : "assets/Skills/html.jpg",
       name:"HTML"
     },
     {
-      im : "assets/Skills/css.jpg",
+      im : "assets/Skills/css-compressed.jpg",
       name:"CSS"
      },
     {
-      im : "assets/Skills/nodejs1.jpg",
+      im : "assets/Skills/nodejs1-compressed.jpg",
       name:"NODE JS"
     },
     {
@@ -33,10 +33,10 @@ export class SkillsComponent implements OnInit  {
     },
     {
       im : "assets/Skills/bts.jpg",
-      name:"BOOTSTRAP"  
+      name:"BOOTSTRAP"
     },
     {
-      im : "assets/Skills/jqu2.png",
+      im : "assets/Skills/jqu2-compressed.jpg",
       name:"JQUERY"
     },
     {
@@ -51,7 +51,7 @@ export class SkillsComponent implements OnInit  {
       im : "assets/Skills/git.png",
       name:"GIT"
     }
-  ] 
+  ]
 
   customOptions: any = {
     loop: true,
@@ -83,29 +83,29 @@ export class SkillsComponent implements OnInit  {
     ]
   };
 
-  constructor( private elementRef: ElementRef) { 
+  constructor( private elementRef: ElementRef) {
      if ($("body").hasClass("projBody")){
       $('body').removeClass("projBody");
-    } 
+    }
   }
- 
+
   ngOnInit() {
     if( $('owl-dot span').hasClass("barDot")){
       $('owl-dot span').removeClass("barDot");
     }
-    
+
     $(function()
     {
        $('div').mousemove(function(e)
-      {   
+      {
           e.preventDefault();
          $('div').css('background-position', (e.pageX - 250) + 'px '+(e.pageY - 250) + 'px');
-       
+
       });
-    }); 
-     
+    });
+
     const shadow = document.getElementById('shadow');
-    
+
     document.addEventListener('mousemove', (e) => {
       let x = e.clientX - (document.documentElement.clientWidth * 1.5);
       let y = e.clientY - (document.documentElement.clientHeight * 1.5);
